@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #111;
+        }
+
+        main {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .course-content {
+            display: none;
+            text-align: center;
+            border: 2px solid #333; /* Change #333 to your desired border color */
+            border-radius: 8px; /* Optional: adds rounded corners */
+            padding: 20px; /* Adds space between the content and the border */
+            margin: 20px 0; /* Adds space around the course content */
+            background-color: #fff; /* Background color to make the content stand out */
+        }
+
+        .course-content.active {
+            display: block;
+        }
+
+        .course-image {
+            width: 50%; /* Adjust size to fit your design */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">MASTERMIND</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Offered Courses</h2>
+            <ul>
+                <li><a href="#" data-target="c-cpp">C & C++</a></li>
+                <li><a href="#" data-target="java">Java</a></li>
+                <li><a href="#" data-target="python">Python</a></li>
+                <li><a href="#" data-target="android">Android</a></li>
+                <li><a href="#" data-target="web-design">Web Design & Development</a></li>
+                <li><a href="#" data-target="ai-ds">AI & DS</a></li>
+                <li><a href="#" data-target="machine-learning">Machine Learning</a></li>
+                <li><a href="#" data-target="deep-learning">Deep Learning</a></li>
+                <li><a href="#" data-target="opencv">OpenCV</a></li>
+                <li><a href="#" data-target="devops-engineer">DevOps Engineer</a></li>
+                <li><a href="#" data-target="cloud-computing">Cloud Computing</a></li>
+                <li><a href="#" data-target="gen-ai">Gen AI</a></li>
+                <li><a href="#" data-target="data-analytics">Data Analytics</a></li>
+                <li><a href="#" data-target="full-stack-web-development">Full Stack Web Development</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <div id="c-cpp" class="course-content">
+                <h2>C & C++</h2>
+                <p>This section covers C & C++ programming languages. Both languages have similar syntax and code structure. The compilation process is also similar.</p>
+                <img src="c.jpg" alt="C & C++" class="course-image">
+                <a href="https://www.learncpp.com/cpp-tutorial/introduction-to-cplusplus/">More content Click Here</a>
+            </div>
+            <div id="java" class="course-content">
+                <h2>Java</h2>
+                <p>This section covers Java programming. Java is known for its portability across platforms and its object-oriented features.</p>
+                <img src="java.jpg" alt="Java" class="course-image">
+                <a href="https://www.w3schools.com/java/">More content Click Here</a>
+            </div>
+            <div id="python" class="course-content">
+                <h2>Python</h2>
+                <img src="python.jpg" alt="Python" class="course-image">
+                <p>Python is a widely used general-purpose, high-level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation.</p>
+                <p>It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.</p>
+                <a href="https://www.geeksforgeeks.org/introduction-to-python/">More content Click Here</a>
+            </div>
+            <div id="android" class="course-content">
+                <h2>Android</h2>
+                <p>Android is the largest installed base among various mobile platforms across the globe.</p>
+                <p>Hundreds of millions of mobile devices are powered by Android in more than 190 countries. It conquered around 71% of the global market share by the end of 2021, and this trend is growing every day.</p>
+                <img src="andriod.jpg" alt="Android" class="course-image">
+                <a href="https://www.geeksforgeeks.org/introduction-to-android-development/">More content Click Here</a>
+            </div>
+            <div id="web-design" class="course-content">
+                <h2>Web Design & Development</h2>
+                <p>This section covers web design and development. You'll learn about HTML, CSS, JavaScript, and modern frameworks to create dynamic and responsive websites.</p>
+                <img src="web.jpg" alt="Web Design & Development" class="course-image">
+                <a href="https://www.w3schools.com/">More content Click Here</a>
+            </div>
+            <div id="ai-ds" class="course-content">
+                <h2>AI & DS</h2>
+                <p>This section explores Artificial Intelligence (AI) and Data Science (DS). Topics include machine learning, data analysis, and AI applications in various fields.</p>
+                <img src="ai.jpg" alt="AI & DS" class="course-image">
+                <a href="https://www.coursera.org/browse/data-science">More content Click Here</a>
+            </div>
+            <div id="machine-learning" class="course-content">
+                <h2>Machine Learning</h2>
+                <p>Machine Learning involves algorithms that allow computers to learn from data and make predictions. This section will cover supervised and unsupervised learning techniques.</p>
+                <img src="ml.jpg" alt="Machine Learning" class="course-image">
+                <a href="https://www.coursera.org/learn/machine-learning">More content Click Here</a>
+            </div>
+            <div id="deep-learning" class="course-content">
+                <h2>Deep Learning</h2>
+                <p>Deep Learning is a subset of machine learning that uses neural networks with many layers. This section covers topics such as convolutional neural networks and recurrent neural networks.</p>
+                <img src="Deep-Learning.jpg" alt="Deep Learning" class="course-image">
+                <a href="https://www.deeplearning.ai/">More content Click Here</a>
+            </div>
+            <div id="opencv" class="course-content">
+                <h2>OpenCV</h2>
+                <p>OpenCV is an open-source library for computer vision. This section covers image processing techniques and object detection using OpenCV.</p>
+                <img src="download.png" alt="OpenCV" class="course-image">
+                <a href="https://opencv.org/">More content Click Here</a>
+            </div>
+            <div id="devops-engineer" class="course-content">
+                <h2>DevOps Engineer</h2>
+                <p>This section focuses on DevOps practices for continuous integration and continuous delivery (CI/CD). Learn about automation, containerization, and monitoring.</p>
+                <img src="download (1).png" alt="DevOps Engineer" class="course-image">
+                <a href="https://www.coursera.org/browse/computer-science/devops">More content Click Here</a>
+            </div>
+            <div id="cloud-computing" class="course-content">
+                <h2>Cloud Computing</h2>
+                <p>Cloud Computing involves delivering computing services over the internet. This section covers cloud platforms, services, and deployment models.</p>
+                <img src="cc1.jpg" alt="Cloud Computing" class="course-image">
+                <a href="https://aws.amazon.com/training/">More content Click Here</a>
+            </div>
+            <div id="gen-ai" class="course-content">
+                <h2>Gen AI</h2>
+                <p>Generative AI refers to AI models that can create new content such as images, text, or audio. This section explores generative models and their applications.</p>
+                <img src="genn.jpg" alt="Generative AI" class="course-image">
+                <a href="https://www.artstation.com/search?q=generative%20ai">More content Click Here</a>
+            </div>
+            <div id="data-analytics" class="course-content">
+                <h2>Data Analytics</h2>
+                <p>Data Analytics involves analyzing large sets of data to uncover insights. This section covers data collection, analysis techniques, and visualization.</p>
+                <img src="da.jpg" alt="Data Analytics" class="course-image">
+                <a href="https://www.tableau.com/learn/training">More content Click Here</a>
+            </div>
+            <div id="full-stack-web-development" class="course-content">
+                <h2>Full Stack Web Development</h2>
+                <p>Full Stack Web Development covers both front-end and back-end development. Learn about databases, server-side programming, and client-side frameworks.</p>
+                <img src="full.jpg" alt="Full Stack Web Development" class="course-image">
+                <a href="https://www.udacity.com/course/intro-to-full-stack-web-development--ud257">More content Click Here</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.sidebar a');
+            const contents = document.querySelectorAll('.course-content');
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+
+                    contents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.add('active');
+                        } else {
+                            content.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
